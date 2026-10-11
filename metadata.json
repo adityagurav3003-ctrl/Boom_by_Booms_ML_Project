@@ -1,0 +1,35 @@
+{
+  "defence": {
+    "target": "Total Indian defence exports",
+    "unit": "\u20b9 crore",
+    "frequency": "annual FY",
+    "training_period": "FY2016-17 to FY2021-22",
+    "test_period": "FY2022-23 to FY2024-25",
+    "architecture": "2->8->ReLU->1",
+    "parameters": 33,
+    "seed": 42,
+    "epochs": 1000,
+    "test_mae_crore": 2289.3466796875,
+    "test_rmse_crore": 2548.3935546875,
+    "forecast_fy2025_26_crore": 27107.970703125,
+    "status": "experimental"
+  },
+  "space": {
+    "target": "NSIL total revenue",
+    "unit": "\u20b9 lakh",
+    "frequency": "annual FY",
+    "observations": "FY2019-20 to FY2024-25",
+    "validation_training_period": "FY2019-20 to FY2022-23",
+    "validation_test_period": "FY2023-24 to FY2024-25",
+    "architecture": "1->1 linear PyTorch model",
+    "parameters": 2,
+    "seed": 42,
+    "epochs": 5000,
+    "validation_mae_lakh": 154562.6875,
+    "validation_rmse_lakh": 155216.015625,
+    "forecast_fy2025_26_lakh": 385134.4976836794,
+    "forecast_fy2025_26_crore": 3851.344976836794,
+    "status": "experimental",
+    "interpretation_note": "NSIL total revenue is a company-level space-sector indicator, not total Indian space-sector revenue."
+  }
+}
